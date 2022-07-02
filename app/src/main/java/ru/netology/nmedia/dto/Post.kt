@@ -6,19 +6,7 @@ data class Post(
     val content: String,
     val published: String,
     val likedByMe: Boolean = false,
-    var countLikes: UInt,
-    var countShare: UInt,
-    var countGlaz: UInt
-) {
-    /*fun uIntToString(n:UInt):String {  // Переделать расширением типа
-        val res = when {
-            n < 1000u -> n.toString()
-            n < 10000u -> "${n/1000u}.${n/100u%10u}K"
-            n < 1000000u -> "${n/1000u}K"
-            n < 10000000u -> "${n/1000000u}.${n/100000u%10u}M"
-            n < 100000000u -> "${n/1000000u}M"
-            else -> "много"
-        }
-        return res
-    }*/
-}
+    val countLikes: UInt,
+    val countShare: UInt,
+    val countGlaz: UInt
+)
